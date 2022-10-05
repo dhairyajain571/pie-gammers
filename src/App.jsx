@@ -5,8 +5,7 @@ import Header from './components/header/Header'
 import Games from './components/games/Games'
 import Blogs from './components/blogs/Blogs'
 import Contact from './components/contact/Contact'
-import Sound from 'react-sound'
-import Music from './assets/Fire Burning.wav'
+
 import Footer from './components/footer/Footer'
 import AVAR1 from './assets/avatar1.jpg'
 import AVAR2 from './assets/avatar2.jpg'
@@ -48,13 +47,7 @@ const App = () =>
     return (
           <>
           
-          <Sound
-         url={Music}
-         playStatus={Sound.status.PLAYING}
          
-         autoPlay
-      
-          />
           
             <video id="background-video" autoPlay loop muted>
           <source
