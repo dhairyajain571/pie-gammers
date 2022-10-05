@@ -2,14 +2,11 @@
     width: 80%;
     height: 70vh;
     margin-top: 4rem;
-    
-    
-
 }
 
 .client__avatar{
     width: 100%;
-    height: max-content;
+   
     
     border: 0.4rem solid var(--color-primary-variant);
 
@@ -20,12 +17,21 @@
     
     background-repeat: no-repeat;
     background-size: cover;
+    height: fit-content;
     text-align: center;
     padding: 2rem;
     border-radius: 2rem;
     user-select: none;
+    backdrop-filter: blur(3px);
+    background-color: var(--color-primary-variant);
+    transition: var(--transition);
     
 
+}
+
+.testimonial:hover{
+    background-color: rgba(0, 0, 0, 0.587);  
+    transition: var(--transition);
 }
 
 
@@ -53,32 +59,70 @@
 
 
 
-
-
-
-
 @media screen and (max-width :1024px) {
-    .container.testimonials__container{
-        width: 90%;
-        height: 50vh;
+   
+    .testimonial {
+    
+        background-repeat: no-repeat;
+        background-size:contain;
     }
     .event__name{
         
-        padding-top: 38vh;
+        padding-top: 40vh;
+        font-size: 20px;
+    }
+   
+   }
+
+
+
+
+
+@media screen and (max-width :800px) {
+   
+    .testimonial {
+    
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    .event__name{
+        
+        padding-top: 25vh;
+        font-size: 10px;
     }
     .event__description{
-        color: transparent;
+        font-size: 10px;
+    }
+    .container.testimonials__container{
+        width: 80%;
+        height: 60vh;
+        margin-top: 4rem;
     }
    }
+
    
    
    @media screen and (max-width :600px) {
 
-    .container.testimonials__container{
-        width: var(--container-width-sm);
+    .testimonial {
+    
+        background-repeat: no-repeat;
+        background-size:contain;
     }
     
-    .event__description{
-        width: var(--container-width-sm);
+    .event__name{
+        
+        padding-top: 30vh;
+        font-size: 10px;
     }
+    .event__description{
+        font-size: 10px;
+    }
+
+    .container.testimonials__container{
+        width: 80%;
+        height: 60vh;
+        margin-top: 4rem;
+    }
+    
    }

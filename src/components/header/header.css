@@ -10,6 +10,38 @@ header {
     position: relative;
 }
 
+
+
+.head__container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:10rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    backdrop-filter: blur(3px);
+    background-color: var(--color-primary-variant);
+    border-radius: 2rem;
+    transition: linear;
+
+}
+
+.logo{
+    height:10rem;
+    width: 10rem;
+    border-radius: 2rem;
+}
+
+.head__text{
+ text-align:center;
+ line-height: 10rem;
+ font-size: medium;
+}
+
+
+
+
 .tittle-container{
     width: 100vw;
     
@@ -88,6 +120,22 @@ header {
  header {
     height: 100vh;
  }
+ .header__socials,
+ .scroll__down {
+  display: none;
+ }
+
+ .head__container{
+    margin-top: -12%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+ }
+ .tag{
+    display: none;
+ }
 }
 
 
@@ -98,6 +146,14 @@ header {
 
    .header__socials,
    .scroll__down {
+    display: none;
+   }
+   .head__container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+   .tag{
     display: none;
    }
 }

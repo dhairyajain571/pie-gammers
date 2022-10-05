@@ -1,6 +1,7 @@
 import React from 'react'
 import './testimonial.css'
 import AVTR1 from '../../assets/1.jpg'
+import AVTR2 from '../../assets/slide.png'
 
 
 // import Swiper core and required modules
@@ -27,7 +28,7 @@ const data = [
    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
    
   },
-  { avatar: AVTR1,
+  { avatar: AVTR2,
     name: "Name",
     review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
     

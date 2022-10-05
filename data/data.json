@@ -1,0 +1,25 @@
+{
+    "data" : [
+
+        { "avatar": AVAR1,
+         "name": "Name",
+         "blog": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+         
+        },
+        { "avatar": AVAR2,
+          "name": "Name",
+          "blog": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          
+         },
+         { "avatar": AVAR3,
+          "name": "Name",
+          "blog": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          
+         },
+         { "avatar": AVAR4,
+          "name": "Name",
+          "blog": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          
+         }
+        ]
+}
