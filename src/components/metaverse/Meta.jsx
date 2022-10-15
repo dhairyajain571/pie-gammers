@@ -18,7 +18,7 @@ function Meta() {
         <a className=' btn btn-primary' href='#'> Explore Meta</a>
         </div>
         <div className='img__container'>
-            <img src={Meta_img}  alt="metaverse"></img> 
+            <img src={Meta_img}  className="img_meta" alt="metaverse"></img> 
         </div>
         </div>
   )
