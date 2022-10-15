@@ -1,20 +1,27 @@
 import React from 'react'
 import './header.css'
+import CTA from './CTA'
 import Testimonial from './Testimonial'
-import Rebel from '../../assets/Rebel.gif'
+import Logo from '../../assets/logo.png'
+
 
 import HeaderSocials from './HeaderSocials'
 
 function Header() {
   return (
-    <header id="header">
-      <div className="container header__container">
-        <div className='head__container'><img className="logo" src={Rebel} alt="logo"/> <h2  className='head__text' >PIE-GAMERS</h2><h3 className='head__text tag'>Show your game!!</h3></div>
-        
-        <Testimonial></Testimonial>
-        <HeaderSocials />
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+    <header id="#" className="header" >
+      <div className="header_container">
+      <div className='header_content'>
+        <img src={Logo} className="logo_img" alt="logo" />
+        <h1>PIE GAMERS</h1><br/>
+      <h2>Live The Adventure</h2>
+      <CTA className="cta__container"></CTA>
       </div>
+      <HeaderSocials></HeaderSocials>
+      
+      </div>
+      
+      
     </header>
   )
 }

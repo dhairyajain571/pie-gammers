@@ -5,7 +5,7 @@ import Header from './components/header/Header'
 import Games from './components/games/Games'
 import Blogs from './components/blogs/Blogs'
 import Contact from './components/contact/Contact'
-
+import Meta from './components/metaverse/Meta'
 import Footer from './components/footer/Footer'
 import AVAR1 from './assets/avatar1.jpg'
 import AVAR2 from './assets/avatar2.jpg'
@@ -46,18 +46,9 @@ const App = () =>
   
     return (
           <>
-          
-         
-          
-            <video id="background-video" autoPlay loop muted>
-          <source
-           src={VIDEO}
-           type="video/mp4"
-          />
-            </video>
-          
             <Nav></Nav>
             <Header></Header>
+            <Meta></Meta>
             <Games></Games>
             <Blogs data={data}></Blogs>
             <Contact></Contact>

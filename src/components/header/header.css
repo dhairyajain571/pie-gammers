@@ -1,80 +1,53 @@
 header {
-    height: 100vh;
-    padding-top: 3rem;
+    background-image: url("../../assets/header_background1.jpg");
+    height: 100vh;    
+    background-size:auto 100vh;
     overflow: hidden;
-}
-
-.header__container{
-    text-align: center;
-    height: 100%;
-    position: relative;
-}
-
-
-
-.head__container{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height:10rem;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    backdrop-filter: blur(3px);
-    background-color: var(--color-primary-variant);
-    border-radius: 2rem;
-    transition: linear;
-
-}
-
-.logo{
-    height:10rem;
-    width: 10rem;
-    border-radius: 2rem;
-}
-
-.head__text{
- text-align:center;
- line-height: 10rem;
- font-size: medium;
-}
-
-
-
-
-.tittle-container{
-    width: 100vw;
+    background-repeat:repeat-x;
     
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top:0;
-    backdrop-filter: blur(3px);
-    background-color: var(--color-primary-variant);
+    
 }
 
-/* ######################## CTA #################### */
 
-.cta{
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
+
+
+.header_container{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.327) 0%, rgba(0,0,0,1) 100%);
+    height:100%;
+    text-align: center;
+    display:grid;
+    gap: 4rem;
+    align-items: center;
     justify-content: center;
+    
+    
+    
+
 }
 
-/* ######################## Header Socials #################### */
+.header_content{
+    display:inline;
+}
+
+.header_content h1{
+    font-size: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
 
 
 .header__socials {
-    font-size: larger;
     display: flex;
+    font-size: 20px;
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 0;
-    bottom: 15vh;
+    left: 10rem;
+    bottom: 13rem;
 
 }
 
@@ -85,75 +58,55 @@ header {
     background: var(--color-primary);
 }
 
-/* ######################## Me #################### */
+.logo_img{
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 
-.me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5;
-
+   
 }
 
 
-/* ########################Scroll#################### */
-
-.scroll__down{
+.threed{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    right: -2.3rem;
-    bottom: 25vh;
-    transform: rotate(90deg) ;
-    font-weight: 300;
-    font-size: larger;
+    right: 10rem;
+    height: 100vh;
+    width: 500px;
 }
-
-
-
 
 
 @media screen and (max-width :1024px) {
- header {
-    height: 100vh;
- }
- .header__socials,
- .scroll__down {
-  display: none;
- }
-
- .head__container{
-    margin-top: -12%;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
- }
- .tag{
-    display: none;
- }
-}
-
-
-@media screen and (max-width :600px) {
-   header{
-     height: 100vh;
+    .header__socials{
+        display: none;
+    } 
+    
+    .header_content h1{
+        font-size: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
+    .logo_img{
+        height: 200px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
    }
-
-   .header__socials,
-   .scroll__down {
-    display: none;
+   
+   
+   @media screen and (max-width :600px) {
+    .header__socials{
+        display: none;
+    } 
+    
+    .header_content h1{
+        font-size: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+        
+    }
    }
-   .head__container{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   }
-   .tag{
-    display: none;
-   }
-}

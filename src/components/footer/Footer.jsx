@@ -8,7 +8,7 @@ import {BsInstagram} from 'react-icons/bs'
 
 function Footer() {
   return (
-    <footer>
+    <footer id="footer">
       <a href="#" className='footer__logo'>PIE GAMERS</a>
 
       <ul className='permalinks'>
