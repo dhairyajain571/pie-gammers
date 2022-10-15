@@ -33,6 +33,7 @@ img:hover{
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 20%;
+    padding-right: 20%;
     backdrop-filter: blur(10px);
     margin-right: auto;
 }
@@ -70,7 +71,19 @@ img:hover{
         
         grid-template-columns:1fr;
         text-align: center;
+    }
+    .meta__content h1 {
+        font-size: 35px;
         
+    }
+
+    .meta__content h2 {
+        font-size: 15px;
+        
+    }
+
+    .meta__content h3 {
+        font-size: 15px;
         
     }
    }
