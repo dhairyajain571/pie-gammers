@@ -69,6 +69,7 @@ img:hover{
     .meta {
         
         grid-template-columns:1fr;
+        text-align: center;
         
         
     }
