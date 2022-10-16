@@ -1,14 +1,25 @@
 .meta {
+    background: rgb(0,0,0);
+    background: linear-gradient(126deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8634804263502276) 44%, rgba(0,0,0,0) 100%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+   
+    
+}
+
+.background {
+
     background-color: black;
     background-image: url('../../assets/meta.png');
     
     background-position: bottom right;
     background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    background-size: contain;
     height: 100vh;
-    
 }
+
+
 
 .img__container{
     width: 50%;
@@ -27,6 +38,7 @@
     rotate: 10deg;
     transition: var(--transition);
     border: 2px var(--color-white) solid;
+    box-shadow: 5px purple;
 }
 
 .meta__content{
@@ -34,10 +46,17 @@
     margin-bottom: auto;
     padding-left: 20%;
     padding-right: 20%;
-    backdrop-filter: blur(10px);
+  
     margin-right: auto;
+   
+   
 }
 
+.text_content{
+    background: -webkit-linear-gradient(91.63deg, #A9FFDB 0.91%, #FFB6B6 99.42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .meta__content h2 {
     padding-top: 10%;
@@ -64,7 +83,7 @@
     .img__container{
         margin-left: auto;
         margin-right: auto;
-        backdrop-filter: blur(10px);
+        width: 40%;
     }
     
     .meta {

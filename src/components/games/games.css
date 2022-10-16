@@ -1,56 +1,104 @@
-.game__container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2.5rem;
+#game{
+    background-color: black;
+    text-align: center;
+    padding-block: 50px;
 }
 
-.game__item{
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
+.game__containerdown{
+
+ /* The image used */
+  
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 1%;
+  margin-left: 25%;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.game__containerup{
+
+    /* The image used */
+     
+   
+     /* Set a specific height */
+     min-height: 500px; 
+   
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top: 4rem;
+     display: grid;
+     grid-template-columns: 20% 80%;
+     padding: 1%;
+     margin-right: 25%;
+     border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+   }
+
+.content_text_up
+{   
+    text-align: left;
+    padding: 20px;
     border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-
-.game__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-}
-
-.game__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
+    backdrop-filter: blur(15px);
+    margin-top: auto;
+    margin-bottom: auto;
+   
 
 }
 
-.game__item h3{
-    margin: 1.2rem 0 2rem;
+.content_text_down
+{   
+    text-align: right;
+    padding: 20px;
+    border-radius: 2rem;
+    backdrop-filter: blur(15px);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
-.game__item-cta{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+
+.content_img{
+    margin:auto;
+}
+
+.content_img img {
+     width: 70%;
+     margin-left: 10%;
+    border-radius: 2rem ;
 }
 
 
+.content_img a {
+    margin-top: 10%;
+
+}
 
 @media screen and (max-width :1024px) {
 
-    .game__container{
-        grid-template-columns: 1fr ;
-        gap: 1.2rem;
-    }
-  
-   }
-   
-   
-   @media screen and (max-width :600px) {
-    .game__container{
+    .game__container1{
         grid-template-columns: 1fr;
-        gap: 1rem;
     }
+    .game__container2{
+        grid-template-columns: 1fr;
+    }
+    .content_text
+{
+    text-align: center;
+}
 
-   }
+}

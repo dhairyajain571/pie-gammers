@@ -1,52 +1,61 @@
 import React from 'react'
-import IMG6 from "../../assets/Rebel.gif"
-import "../games/games.css"
-
-
-const data = [
-
-    
-    { id: 1,
-     image: IMG6,
-     tittle: 'This is Game Description',
-     play : "#"
-    },
-    { id: 2,
-        image: IMG6,
-        tittle: 'This is Game Description',
-        play : "#"
-       }
-   
-   ]
-
+import './games.css'
+import Game_img from './../../assets/jungle.jpg'
+import Game_back1 from './../../assets/back_game.jpg'
+import Game_back2 from '../../assets/Game_back2.jpg'
 
 function Games() {
+
+  const game_data = [
+    {
+      id : 1 , 
+      image : Game_img, 
+      bg: Game_back1 , 
+      tittle : "Jungle Fable",
+      description : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt neque mollitia fuga, rem aperiam dolores numquam iure non temporibus exercitationem quas itaque blanditiis perspiciatis praesentium eligendi a harum doloribus tempore?",
+      image2 : Game_img, 
+      bg2: Game_back2 , 
+      tittle2 : "Jungle Fable",
+      description2 : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt neque mollitia fuga, rem aperiam dolores numquam iure non temporibus exercitationem quas itaque blanditiis perspiciatis praesentium eligendi a harum doloribus tempore?"
+    }
+  ]
+
+   
   return (
-    <section id='game'>
+    <div id='game'>
       <h5>Our Recent Work</h5>
       <h2>GAMES</h2>
 
-      <div className="container game__container">
-        {
-          data.map(({id , image , tittle , play}) => {
-            return (
-              <article key={id} className='game__item'>
-                 <div className='game__item-image'>
-                    <img src={image} alt={tittle} />
-                  </div>
-                   <h3>{tittle}</h3>
-                  <div className="game__item-cta">
-                      <a href={play} className='btn' target="_blank">Play</a>
-                      
-                  </div>
-              </article>
-            )
-          })
-        }
-        
-
+     {game_data.map(({id, image , bg , tittle ,description , image2 , bg2 , tittle2 ,description2 })=> {
+     return( 
+     <>
+     <div className='game__containerup' key={id} style={{ backgroundImage: `url(${bg})` }}>
+       <div className='content_img'>
+         <img src={image} alt="game_logo"></img>
+        </div>
+       <div className='content_text_up'>
+          <h1>{tittle}</h1>
+          <h4>{description}</h4>
+         <a href="#" className='btn btn-primary'>Play</a>
       </div>
-    </section>
+    </div>
+      <div className='game__containerdown' style={{ backgroundImage: `url(${bg2})` }}>
+        <div className='content_text_down'>
+           <h1>{tittle2}</h1>
+           <h4>{description2}</h4>
+           <a href="#" className='btn btn-primary '>Play</a>
+        </div>
+      <div className='content_img'>
+        <img src={image2} alt="game_logo"></img>
+      </div>
+    </div>
+    </>
+     ) 
+     })}
+     
+      
+      
+    </div>
   )
 }
 
