@@ -90,10 +90,10 @@
 
 @media screen and (max-width :1024px) {
 
-    .game__container1{
+    .game__containerup{
         grid-template-columns: 1fr;
     }
-    .game__container2{
+    .game__containerdown{
         grid-template-columns: 1fr;
     }
     .content_text
