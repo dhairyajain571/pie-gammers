@@ -25,6 +25,9 @@
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
+.up{
+    display: none;
+}
 
 .game__containerup{
 
@@ -92,13 +95,27 @@
 
     .game__containerup{
         grid-template-columns: 1fr;
+       
+       
     }
     .game__containerdown{
         grid-template-columns: 1fr;
+       
     }
-    .content_text
-{
+    .content_text_up
+    {
+        text-align: center;
+    }
+
+    .content_text_down
+{  
     text-align: center;
 }
+.down{
+    display: none;
+}
 
+.up{
+    display: block;
+}
 }

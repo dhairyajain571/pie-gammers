@@ -1,6 +1,7 @@
-import React, {useState , useEffect} from 'react'
+import React from 'react'
 import './blogs.css'
-
+import AVTR1 from '../../assets/1.jpg'
+import AVTR2 from '../../assets/slide.png'
 
 
 // import Swiper core and required modules
@@ -16,49 +17,59 @@ import 'swiper/css/pagination';
 
 
 
-function Blogs(props) {
 
-  const data = props.data
-  
-  useEffect (() => {
-    console.log("I RAN");
-  }, []);
 
-  return (
-    <section id='blog'>
-      <h5>Get In The Community</h5>
-      <h2>BLOGS</h2>
-      <Swiper className="container blogs__container"
-      // install Swiper modules
-      modules={[ Pagination]}
-      spaceBetween={40}
-      slidesPerView={1}
+
+
+const data = [
+
+  { avatar: AVTR1,
+   name: "Name",
+   review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+   
+  },
+  { avatar: AVTR2,
+    name: "Name",
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
     
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-       >
-        
-        <>
-        {
-        data.map((data) => (  
-            
-         
-        <SwiperSlide key={data.index} className='blog'>
-          <> <div className="client__avatar">
-          <img src={data.avatar} alt="Avatar one" />
-           </div>
-           <h5 className='client__name'>{data.name}</h5>
-           <small className='clients_blog'>
-          {data.blog}
-           </small>
-          </>
-         
-        </SwiperSlide> 
-        ))}
-        </>
-         
-      </Swiper>
+   }
+ 
+ ]
+
+
+function Blogs() {
+  return (
+     
+    <section id='blog' >
+      <h1>Blogs</h1>
+      <h2>explore here</h2>
+      <div className='blog'>
+      <div className='container_back'> 
+      <div className='blog_container'>
+      <img className="blog_image" src={AVTR2} alt="" />
+      <div className='blog_tittle'>Tittle</div>
+        <h3 className='blog_description'>Description</h3>
+      </div>
+      </div>
+
+      <div className='container_back'> 
+      <div className='blog_container'>
+      <img className="blog_image" src={AVTR2} alt="" />
+      <div className='blog_tittle'>Tittle</div>
+        <h3 className='blog_description'>Description</h3>
+      </div>
+      </div>
+      <div className='container_back'> 
+      <div className='blog_container'>
+      <img className="blog_image" src={AVTR2} alt="" />
+      <div className='blog_tittle'>Tittle</div>
+        <h3 className='blog_description'>Description</h3>
+      </div>
+      </div>
+      </div>
+
     </section>
+   
   )
 }
 

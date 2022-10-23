@@ -1,65 +1,66 @@
-.container.blogs__container{
-    width: 40%;
-    padding-bottom: 4rem;
-
-}
-
-.client__avatar{
-    width: 4rem;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
-    border: 0.4rem solid var(--color-primary-variant);
-
+.blog{
+    display: grid;
+    background-color: black;
+    padding:5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
     
 }
 
-.blog {
-    background: var(--color-bg-variant);
-    text-align: center;
-    padding: 2rem;
+
+.blog_container{
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
     border-radius: 2rem;
-    user-select: none;
+    background: rgba(0, 0, 0, 0.666);   
 }
 
-.client__blog{
-    color: var(--color-light);
-    font-weight: 300;
-    display: block;
+.container_back{
     width: 80%;
-    margin: 0.8rem auto 0;
+    height: 70vh;
+    border: solid var(--color-primary) 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: linear-gradient(160deg, rgba(255,0,168,0.5329482134650736) 0%, rgba(77,11,153,0.5189426112241772) 53%, rgba(13,5,180,0.7010154403558299) 100%);
+    
+}
+
+.blog_tittle{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.365);
+    backdrop-filter: blur(15px);
+    margin-top: -30px;
+    padding: 20px;
 }
 
 
-.swiper-pagination-bullet-clickable  .swiper-pagination-bullet{
-    background: var(--color-primary);
 
+.blog_image{
+
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
-
-
-
-
-
-
-
+.blog_description{
+    backdrop-filter: blur(15px);
+    
+    
+}
 
 
 @media screen and (max-width :1024px) {
-    .container.blogs__container{
-        width: 60%;
-    }
+   .blog{
+    grid-template-columns: 1fr;
+    padding-left: 10%;
+   }
+  
    }
    
    
    @media screen and (max-width :600px) {
-
-    .container.blogs__container{
-        width: var(--container-width-sm);
-    }
     
-    .client__blog{
-        width: var(--container-width-sm);
-    }
    }

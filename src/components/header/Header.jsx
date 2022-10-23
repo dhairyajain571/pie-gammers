@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import Testimonial from './Testimonial'
+
 import Logo from '../../assets/logo.png'
 
 

@@ -1,8 +1,13 @@
+#contact{
+    background-color: black;
+}
+
 .container.contact__container{
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
     gap:12%;
+    padding-bottom: 20px;
 }
 
 .contact__options{

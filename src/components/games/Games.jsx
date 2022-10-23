@@ -40,12 +40,15 @@ function Games() {
       </div>
     </div>
       <div className='game__containerdown' style={{ backgroundImage: `url(${bg2})` }}>
+      <div className='content_img up'>
+        <img src={image2} alt="game_logo"></img>
+      </div>
         <div className='content_text_down'>
            <h1>{tittle2}</h1>
            <h4>{description2}</h4>
            <a href="#" className='btn btn-primary '>Play</a>
         </div>
-      <div className='content_img'>
+      <div className='content_img down'>
         <img src={image2} alt="game_logo"></img>
       </div>
     </div>
